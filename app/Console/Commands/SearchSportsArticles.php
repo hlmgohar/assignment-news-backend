@@ -15,7 +15,7 @@ class SearchSportsArticles extends Command
     public function handle(): void
     {
         $apiUrl = 'https://newsapi.org/v2/top-headlines';
-        $apiKey = env('200db4c6fb7f463c939c38a9e88651be');
+        $apiKey = '200db4c6fb7f463c939c38a9e88651be';
 
         // Fetch articles using the "sports" category
         $response = Http::get($apiUrl, [
